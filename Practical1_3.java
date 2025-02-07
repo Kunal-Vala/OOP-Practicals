@@ -1,5 +1,13 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 public class Practical1_3 {
     public static void main(String[] args) {
+        String enrollmentNumber = "230130107054";
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+        System.out.println("Enrollment Number: " + enrollmentNumber);
+        System.out.println("Current Date and Time: " + currentDateTime.format(formatter));
         
         double a = 3.4;
         double b = 50.2;
